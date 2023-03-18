@@ -52,4 +52,19 @@ public class PessoaJuridica extends BasePessoa {
         this.nomeFantasia = nomeFantasia;
     }
 
+    @Override
+    public void Imprimir() {
+        System.out.println("\r\n");
+        System.out.println("DADOS PESSOA JURÍDICA");
+        System.out.println("Código da Empresa: " + this.codigoPessoa);
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Email: " + this.email);
+        System.out.println("Site: " + this.site);
+        System.out.println("Data de Inclusão: " + this.dataInclusao);
+        System.out.println("CNPJ: " + this.cnpj);
+        System.out.println("Inscrição Estadual: " + this.inscricaoEstadual);
+        System.out.println("Inscrição Municipai: " + this.inscricaoMunicipal);
+        System.out.println("Nome Fantasia: " + this.nomeFantasia);
+    }
+
 }

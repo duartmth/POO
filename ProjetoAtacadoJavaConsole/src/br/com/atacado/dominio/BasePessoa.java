@@ -62,4 +62,6 @@ public abstract class BasePessoa {
         this.dataInclusao = dataInclusao;
     }
 
+    public abstract void Imprimir(); /* Assinatura de método */
+
 }
