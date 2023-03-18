@@ -116,4 +116,23 @@ public class PessoaFisica extends BasePessoa {
         System.out.println("Nome da Mãe: " + this.nomeMae);
     }
 
+    @Override
+    public String toString() {
+        return "PessoaFisica [" +
+                "codigoPessoa=" + codigoPessoa +
+                ", nome=" + nome +
+                ", email=" + email +
+                ", site=" + site +
+                ", dataInclusao=" + dataInclusao +
+                ", cpf=" + cpf +
+                ", rg=" + rg +
+                ", sexo=" + sexo +
+                ", raca=" + raca +
+                ", nacionalidade=" + nacionalidade +
+                ", naturalidade=" + naturalidade +
+                ", nomePai=" + nomePai +
+                ", nomeMae=" + nomeMae
+                + "]";
+    }
+
 }

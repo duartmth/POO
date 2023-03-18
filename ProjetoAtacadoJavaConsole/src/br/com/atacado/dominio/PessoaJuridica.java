@@ -67,4 +67,18 @@ public class PessoaJuridica extends BasePessoa {
         System.out.println("Nome Fantasia: " + this.nomeFantasia);
     }
 
+    @Override
+    public String toString() {
+        return "PessoaJuridica [" +
+                "codigoPessoa=" + codigoPessoa +
+                ", nome=" + nome +
+                ", email=" + email +
+                ", site=" + site +
+                ", dataInclusao=" + dataInclusao +
+                ", cnpj=" + cnpj +
+                ", inscricaoEstadual=" + inscricaoEstadual +
+                ", inscricaoMunicipal=" + inscricaoMunicipal +
+                ", nomeFantasia=" + nomeFantasia + "]";
+    }
+
 }
