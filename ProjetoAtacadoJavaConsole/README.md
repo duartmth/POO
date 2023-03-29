@@ -11,8 +11,8 @@ Trabalho do curso de Projeto Orientado a Objeto.
 
 
 <footer>
-<h6>Aluno: Matheus Duarte</h6>
-<h6>RA: 348761213114</h6>
-<h6>Curso: Engenharia da Computação</h6>
+<h6> - **Aluno**: Matheus Duarte</h6>
+<h6> - **RA**: 348761213114</h6>
+<h6> - **Curso**: Engenharia da Computação</h6>
 </footer>
 
