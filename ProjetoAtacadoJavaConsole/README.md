@@ -1,4 +1,4 @@
-## Projeto Atacado Java Console
+## Projeto: Atacado (JavaConsole)
 
 <h6>Professor: Luiz Augusto Rodrigues.</h6>
 <h6>Aulas ministradas no primeiro semestre de 2023.</h6>
