@@ -10,6 +10,7 @@ public class Autor extends BaseBiblioteca {
 
     }
 
+    
     public String getNome() {
         return nome;
     }

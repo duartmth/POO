@@ -9,7 +9,16 @@ public class Colecao extends BaseBiblioteca {
 
     }
 
+    public String getEditora() {
+        return editora;
+    }
+
+    public void setEditora(String editora) {
+        this.editora = editora;
+    }
+
     public Colecao(int codigo, String descricao, LocalDate dataCadastro, String editora) {
         super(codigo, descricao, dataCadastro);
     }
+
 }
