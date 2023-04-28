@@ -54,4 +54,9 @@ public class Categoria {
         this.dateDeInclusao = dateDeInclusao;
     }
 
+    @Override
+    public String toString() {
+        return "Categoria [codigo=" + codigo + ", descricao=" + descricao + ", dateDeInclusao=" + dateDeInclusao + "]";
+    }
+
 }
