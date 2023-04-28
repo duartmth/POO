@@ -1,5 +1,5 @@
 
-import br.com.biblioteca.fakeDB.Colecao;
+import br.com.biblioteca.dominio.Colecao;
 import br.com.biblioteca.fakeDB.ColecaoFakeDB;
 
 public class App {

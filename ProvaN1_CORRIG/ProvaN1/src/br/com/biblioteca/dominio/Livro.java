@@ -3,13 +3,9 @@ package br.com.biblioteca.dominio;
 import java.time.LocalDate;
 
 public class Livro extends Colecao {
-    protected String codigoISBN;
-    protected int codigoAutor;
-    protected String titulo;
-
-    public Livro() {
-
-    }
+    private String codigoISBN;
+    private int codigoAutor;
+    private String titulo;
 
     public String getCodigoISBN() {
         return codigoISBN;
@@ -35,9 +31,21 @@ public class Livro extends Colecao {
         this.titulo = titulo;
     }
 
+    public Livro() {
+
+    }
+
     public Livro(int codigo, String descricao, LocalDate dataCadastro, String codigoISBN, int codigoAutor,
             String titulo) {
         super(codigoAutor, descricao, dataCadastro, titulo);
+        this.codigoISBN = codigoISBN;
+        this.codigoAutor = codigoAutor;
+        this.titulo = titulo;
+    }
+
+    @Override
+    public String toString() {
+        return "Livro [codigoISBN=" + codigoISBN + ", codigoAutor=" + codigoAutor + ", titulo=" + titulo + "]";
     }
 
 }

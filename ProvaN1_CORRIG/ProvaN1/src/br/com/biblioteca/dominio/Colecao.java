@@ -1,13 +1,12 @@
 package br.com.biblioteca.dominio;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public class Colecao extends BaseBiblioteca {
-    protected String editora;
+    private String editora;
 
-    public Colecao() {
-
-    }
+    private List<Livro> livros;
 
     public String getEditora() {
         return editora;
@@ -17,8 +16,25 @@ public class Colecao extends BaseBiblioteca {
         this.editora = editora;
     }
 
-    public Colecao(int codigo, String descricao, LocalDate dataCadastro, String editora) {
-        super(codigo, descricao, dataCadastro);
+    public List<Livro> getLivros() {
+        return livros;
     }
 
+    public void setLivros(List<Livro> livros) {
+        this.livros = livros;
+    }
+
+    public Colecao() {
+
+    }
+
+    public Colecao(int codigo, String descricao, LocalDate dataCadastro, String editora) {
+        super(codigo, descricao, dataCadastro);
+        this.editora = editora;
+    }
+
+    @Override
+    public String toString() {
+        return "Colecao [editora=" + editora + "]";
+    }
 }
