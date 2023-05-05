@@ -8,6 +8,8 @@ public class Produto {
 
     private int codigoSubcategoria;
 
+    private int codigoCategoria;
+
     private String descricao;
 
     private double valor;
@@ -54,6 +56,14 @@ public class Produto {
         this.dataDeInclusao = dataDeInclusao;
     }
 
+    public int getCodigoCategoria() {
+        return codigoCategoria;
+    }
+
+    public void setCodigoCategoria(int codigoCategoria) {
+        this.codigoCategoria = codigoCategoria;
+    }
+
     public Produto() {
     }
 
@@ -63,6 +73,22 @@ public class Produto {
         this.descricao = descricao;
         this.valor = valor;
         this.dataDeInclusao = dataDeInclusao;
+    }
+
+    public Produto(int codigo, int codigoSubcategoria, int codigoCategoria, String descricao,
+            LocalDate dataDeInclusao) {
+        this.codigo = codigo;
+        this.codigoSubcategoria = codigoSubcategoria;
+        this.codigoCategoria = codigoCategoria;
+        this.descricao = descricao;
+        this.valor = 0.0;
+        this.dataDeInclusao = dataDeInclusao;
+    }
+
+    @Override
+    public String toString() {
+        return "Produto [codigo=" + codigo + ", codigoSubcategoria=" + codigoSubcategoria + ", descricao=" + descricao
+                + ", valor=" + valor + ", dataDeInclusao=" + dataDeInclusao + "]";
     }
 
 }
