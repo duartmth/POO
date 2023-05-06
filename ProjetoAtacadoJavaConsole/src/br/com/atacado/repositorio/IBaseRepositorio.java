@@ -15,3 +15,5 @@ public interface IBaseRepositorio<TTipo> {
     TTipo Delete(int chave);
 
 }
+
+// assinaturas dos métodos obrigatórios do CRUD

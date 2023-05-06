@@ -1,9 +1,25 @@
 package br.com.atacado.repositorio;
 
-public abstract class BaseRepositorio<TTipo> {
-    
-    //CRUD (Create, Read, Update, Delete)
+import java.util.List;
 
+public abstract class BaseRepositorio<TTipo> implements IBaseRepositorio<TTipo> {
 
+    protected List<TTipo> tabela;
 
+    @Override
+    public List<TTipo> Read() {
+        return this.tabela;
+
+    }
+
+    @Override
+    public TTipo Delete(int chave) {
+        TTipo original = this.Read(chave);
+        if (original != null) {
+            this.tabela.remove(original);
+        }
+        return original;
+    }
 }
+
+// CRUD (Create, Read, Update, Delete)
