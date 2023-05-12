@@ -9,7 +9,6 @@ public abstract class BaseRepositorio<TTipo> implements IBaseRepositorio<TTipo> 
     @Override
     public List<TTipo> Read() {
         return this.tabela;
-
     }
 
     @Override
@@ -20,6 +19,5 @@ public abstract class BaseRepositorio<TTipo> implements IBaseRepositorio<TTipo> 
         }
         return original;
     }
-}
 
-// CRUD (Create, Read, Update, Delete)
+}

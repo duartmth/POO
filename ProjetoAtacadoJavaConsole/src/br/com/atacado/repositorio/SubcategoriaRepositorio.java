@@ -3,9 +3,10 @@ package br.com.atacado.repositorio;
 import br.com.atacado.dominio.Subcategoria;
 import br.com.atacado.fakeDB.SubcategoriaFakeDB;
 
-public class SubcategoriaRepositorio extends BaseRepositorio<Subcategoria>{
+public class SubcategoriaRepositorio extends BaseRepositorio<Subcategoria> {
 
-    public SubcategoriaRepositorio(){
+    public SubcategoriaRepositorio() {
+        super();
         this.tabela = new SubcategoriaFakeDB().getTabela();
     }
 
@@ -21,7 +22,6 @@ public class SubcategoriaRepositorio extends BaseRepositorio<Subcategoria>{
         obj.setCodigo(chave);
         this.tabela.add(obj);
         return obj;
-
     }
 
     @Override
@@ -46,5 +46,4 @@ public class SubcategoriaRepositorio extends BaseRepositorio<Subcategoria>{
         }
         return alteracao;
     }
-    
 }

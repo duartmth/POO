@@ -6,6 +6,7 @@ import br.com.atacado.fakeDB.ProdutoFakeDB;
 public class ProdutoRepositorio extends BaseRepositorio<Produto> {
 
     public ProdutoRepositorio() {
+        super();
         this.tabela = new ProdutoFakeDB().getTabela();
     }
 
@@ -45,5 +46,4 @@ public class ProdutoRepositorio extends BaseRepositorio<Produto> {
         }
         return alteracao;
     }
-
 }
