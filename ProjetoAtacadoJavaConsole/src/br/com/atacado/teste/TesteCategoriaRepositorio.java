@@ -2,20 +2,24 @@ package br.com.atacado.teste;
 
 import java.util.List;
 
-import br.com.atacado.dominio.Categoria;
-import br.com.atacado.repositorio.CategoriaRepositorio;
+import br.com.atacado.dominio.Produto;
+//import br.com.atacado.dominio.Categoria;
+//import br.com.atacado.dominio.Subcategoria;
+import br.com.atacado.repositorio.ProdutoRepositorio;
+// import br.com.atacado.repositorio.CategoriaRepositorio;
+//import br.com.atacado.repositorio.SubcategoriaRepositorio;
 
 public class TesteCategoriaRepositorio {
 
-    private CategoriaRepositorio repositorio;
+    private ProdutoRepositorio repositorio;
 
     public TesteCategoriaRepositorio() {
-        this.repositorio = new CategoriaRepositorio();
+        this.repositorio = new ProdutoRepositorio();
     }
 
     public void Executar() {
-        List<Categoria> categorias = this.repositorio.Read();
-        for (Categoria tupla : categorias) {
+        List<Produto> produtos = this.repositorio.Read();
+        for (Produto tupla : produtos) {
             System.out.println(tupla.toString());
         }
     }
